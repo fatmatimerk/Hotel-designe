@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qussier</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+body {
+  font-family:sans-serif;
+  margin: none;
+  padding: none;
+  background-color:white;
+}
+
+.contenair{
+  margin: auto;
+  display: grid; 
+  grid-auto-rows: minmax(1fr,auto);
+  grid-template-areas: 
+  "na"
+  "he"
+  "ma"
+  "ma"
+  "fo"
+  ;
+}
+
+.sec{
+  background-color: black;
+}
+ /*---------------------- navbar style-----------------*/
+.navbar {
+  grid-area: na;
+  overflow: hidden;
+  background-color: black;
+}  
+#br{
+  color:#cf9339;
+  font-weight: bolder;
+  font-size: 3em;
+  font-family: 'Playfair Display', serif;
+  float: left;
+  padding: 25px 16px;
+  text-decoration: none;
+  margin-left: 5%;
+}
+
+#myNavbar{
+  text-align: center;
+  width:60%; 
+  float: left;
+  overflow: hidden;
+  margin-left: 20%;
+  padding: 10px 16px; 
+
+}
+#ente{
+  font-size: 16px; 
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:white; 
+}
+#ente:hover{
+  color: #ffa726;
+
+}
+/*---------navbar buttons---------*/
+.buttons-links{
+  float: right; 
+  padding: 20px 16px;
+  margin-right: 10%;
+  width: 100px ; height:30px;
+}
+.nabtn2{
+  color:white;
+  border: 2px solid white;
+  width: 100px ; height:30px;
+  background-color: black;  
+}
+.btnlinks{
+  text-decoration: none; 
+}
+.btnlinks :hover{
+  background-color:#ffa726;
+}
+/*------------------------------header style ------------------------------*/
+.header{
+  grid-area: he;
+  color: white;
+  background-color: black;
+  display: grid;
+  grid-template-areas: 
+  "hcol hcor"
+  "him him"
+  ;
+
+}
+.header-content-left{
+  grid-area: hcol;
+  width: 50%;
+  margin-left: 3%;
+}
+.header-content-right{
+  grid-area: hcor;
+  margin : 3%;
+  margin-right: 30%;
+  text-align: center; 
+  font-size:small;
+}
+.header-content-right hr{
+  width: 55%;
+}
+.header-links{
+  color: white;
+  text-decoration: none;
+}
+.header-links:hover{
+  color:#ffa726;
+}
+.headerim{
+  grid-area: him;
+  height:75vh;
+}
+.headerim img{
+  width: 100%;
+  height:75vh;
+
+}
+
+/*---------------------------------main style --------------------------------*/
+.main-content{
+grid-area:ma ;
+display: grid;
+grid-template-areas: 
+"mac1"
+"mac2"
+"mac3"
+"mac4"
+;
+grid-gap:20px;
+
+}
+/*------- content1 style ---------*/
+.main-content1{
+  grid-area:mac1 ;
+  display: grid;
+  width: 70%; margin: auto; 
+  text-align: center; margin-top: 5%;
+  grid-template-areas: 
+  "coic1 cotx1 coic2 cotx2 coic3 cotx3 coic4 cotx4"
+  ;
+}
+.content1-icon1{
+  grid-area: coic1;    
+}
+.content1-icon2{
+  grid-area: coic2;  
+}
+.content1-icon3{
+  grid-area: coic3;  
+}
+.content1-icon4{
+  grid-area: coic4;  
+}
+.content1-icon1 img ,.content1-icon2 img ,.content1-icon3 img ,.content1-icon4 img{
+  width: 40%;
+}
+.content1-text1{
+ grid-area: cotx1;    width: 40%;
+}
+.content1-text2{
+  grid-area: cotx2;    width: 40%;
+
+}
+.content1-text3{
+  grid-area: cotx3;   width: 40%;
+}
+.content1-text4{
+  grid-area: cotx4;   width: 40%;
+}
+
+/*------- content2 style ---------*/
+.main-content2{
+  grid-area: mac2; 
+  display: grid; margin: auto;
+  grid-template-areas: 
+  "co2lp"
+  "co2co"
+  ;
+  grid-gap:50px;
+}
+/*--- content2-lapl style ---*/
+.main-content2-lapol{
+  grid-area: co2lp; margin: auto;
+  text-align: center;
+  width: 50%; margin-top: 5%;
+}
+.lap2{
+ color: #e99619;
+}
+.main-content2-lapol span{
+ color: #bdbdbd;
+}
+/*--- content2-content style ---*/
+.main-content2-content{
+ grid-area: co2co;  width: 80%;
+ display: grid; margin: auto;
+ grid-template-areas: 
+ "cocol cocor"
+ ;
+}
+.main-content2-content-left{
+ grid-area: cocol;
+ margin-left: 5%;
+ margin-top: 5%;
+
+}
+.main-content2-content-left span{
+ color: #bdbdbd;
+}
+.main-content2-content-left label{
+ color:#ffa726;
+}
+.main-content2-content-right{
+  grid-area: cocor;
+  
+}
+.mccrim{
+  width: 300px; height: 350px; float: right;
+}
+.mccrd{
+  width: 200px;height: 100px; margin-top: 15%; float: right;
+}
+
+/*------- content3 style ---------*/
+.main-content3{
+ grid-area:mac3 ; 
+ display: grid; margin: auto;
+  grid-template-areas: 
+  "co3lp"
+  "co3co"
+  ;
+  grid-gap:50px;
+}
+/*--- content3-lapl style ---*/
+.main-content3-lapol{
+  grid-area: co3lp; margin: auto;
+  text-align: center;
+  width: 50%; margin-top: 5%;
+}
+.lap3{
+ color: #e99619;
+}
+.main-content3-lapol span{
+ color: #bdbdbd;
+}
+/*--- content3-content style ---*/
+.main-content3-content{
+  grid-area: co3co;
+  display: grid; margin: auto;
+  grid-template-areas: 
+  "mc3im1 mc3im2 mc3im3"
+  "mc3im4 mc3im2 mc3im5"
+  ;
+  grid-gap: 30px ;
+}
+.main-content3-im1{
+grid-area: mc3im1;
+
+}
+.main-content3-im2{
+  grid-area: mc3im2;
+
+}
+.main-content3-im3{
+  grid-area: mc3im3;
+
+}
+.main-content3-im4{
+  grid-area: mc3im4;
+
+}
+.main-content3-im5{
+  grid-area: mc3im5;
+
+}
+
+/*--- content4 style ---*/
+.main-content4{
+  grid-area:mac4 ; 
+  display: grid; 
+  grid-template-areas: 
+  "mc4cl mc4cr"
+  ;
+  margin-top: 10%;
+}
+/*--- content4-content left style ---*/
+.main-content4-content-left{
+ grid-area:mc4cl ;  height: 400px;
+ background-color: black;  margin: auto;
+}
+.main-content4-content-left-content{
+ width: 50%; margin: auto; margin-top: 10%;
+}
+.main-content4-content-left-content h1{
+color: white; 
+}
+.main-content4-content-left-content hr{
+ color:#ffa726; 
+}
+.main-content4-content-left-content p{
+ color:#bdbdbd; 
+ }
+.mcld{
+  width: 400px; height: 200px; float: left; margin-top: 30%; 
+  margin-left: 20%;
+}
+.mcld h3{
+ color: #e08a09; margin-left: 5%;
+
+}
+.mcld img{
+ margin-left: 5%;
+}
+ /*--- content4-content right style ---*/
+.main-content4-content-right{
+  grid-area: mc4cr; width: 760px; height: 400px;
+ background-image: url(restrant.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.mrb{
+  border-radius: 30px 30px 30px 30px; background-color: #ffa726;
+   color: white; width: 50%;height:40px;
+}
+.mra :hover{
+  background-color: #cf9339;
+}
+.mcrd{
+  width: 400px; height: 300px;  margin-top: 50%; 
+}
+.mcrd h5 , span{
+  margin-left: 5%;
+}
+.mcrd span{
+  color: #a5a4a4; font-size:x-small;
+}
+.mcrd label{
+  color:#cf9339;
+}
+.mcra{
+  text-decoration: none; color: black; 
+}
+.mcra :hover{
+  background-color: #bdbdbd; 
+}
+.box{
+  width: 180px; height: 100px; background-color:rgb(247, 250, 250);
+  box-shadow: #e7e6e6 5px 5px 5px; 
+}
+.md1 , .md3{
+  float: left;
+}
+.md2 , .md4{
+  float: right;
+}
+.md3 , .md4{
+  margin-top: 10%;
+}
+
+/*---------------------------------footer style --------------------------------*/
+.footer{
+  grid-area: fo;  
+  margin-top: 30%; color: white; text-align: center;
+  background-color: black;
+}
+.dfo{
+  display: grid; width: 85%;
+  margin: auto;
+  grid-template-areas: 
+  "df1 df2 df3"
+  ;
+}
+.dfo1{
+ grid-area: df1 ; width: 50%; margin: auto;
+}
+.dfo2{
+  grid-area: df2 ;width: 50%;margin: auto;
+}
+.dfo2 span , h6{
+  font-size: small; color: #a5a4a4;
+}
+.dfo2 input{
+  width: 60%; height:35px;
+  border-radius: 10px 10px 10px 10px;
+}
+.dfb{
+  width: 20%; height:35px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #e08a09;
+}
+.dfb:hover{
+ background-color: #e7c28b;
+}
+.dfo3{
+  grid-area: df3 ;width: 50%;margin: auto;
+}
+.dfa{
+  color: white; text-decoration: none;
+}
+.dfa:hover{
+  color:#cf9339; 
+}
+.list{
+  list-style: none; padding: 5%; font-size: small;
+}
+.footer hr{
+  width: 80%; 
+}
+.dfo4{
+  width: 30%; float: right;
+}
+.im1 , .im2 , .im3{
+  width: 5%;
+}
+.im2 , .im3{
+  border-radius: 50%;
+}
+.footer h6{
+ margin-left: 30%;
+}
+@media screen and (min-device-width : 200px) and (max-device-width : 480px){
+
+.navbar {
+  grid-area: na;  margin: auto;
+  overflow: hidden;
+  background-color: black;
+}  
+
+#br{
+  padding: 14px 16px;
+}
+
+/*------------------------------header style ------------------------------*/
+.header{
+  display: grid;
+  grid-template-areas: 
+  "hcol"
+  "hcor"
+  "him"
+  ;
+
+}
+.header-content-left{
+  grid-area: hcol;
+}
+.header-content-right{
+  grid-area: hcor; margin: auto;
+}
+.header-content-right hr{
+  width: 25%;
+}
+
+/*------- content1 style ---------*/
+
+.content1-icon1 img ,.content1-icon2 img ,.content1-icon3 img ,.content1-icon4 img{
+  width: 20%;
+}
+
+/*--- content2-content style ---*/
+.main-content2-content{
+ grid-area: co2co; 
+ display: grid; 
+ grid-template-areas: 
+ "cocol cocor"
+ ;
+}
+.main-content2-content-left{
+ grid-area: cocol;
+ margin-left: 5%;
+ margin-top: 5%;
+
+}
+.main-content2-content-left span{
+ color: #bdbdbd;
+}
+.main-content2-content-left label{
+ color:#ffa726;
+}
+.main-content2-content-right{
+  grid-area: cocor;
+  
+}
+.mccrim{
+  width: 300px; height: 350px; float: right;
+}
+.mccrd{
+  width: 200px;height: 100px;margin-top: 15%; float: right;
+}
+
+}
+
+@media screen and (min-device-width : 480px) and (max-device-width : 1024px){
+  
+.navbar {
+  grid-area: na;  margin: auto;
+  overflow: hidden;
+  background-color: black;
+}  
+
+#br{
+  padding: 14px 16px;
+}
+
+/*------------------------------header style ------------------------------*/
+.header{
+  display: grid;
+  grid-template-areas: 
+  "hcol"
+  "hcor"
+  "him"
+  ;
+
+}
+.header-content-left{
+  grid-area: hcol;
+}
+.header-content-right{
+  grid-area: hcor; margin: auto;
+}
+.header-content-right hr{
+  width: 25%;
+}
+
+/*------- content1 style ---------*/
+
+.content1-icon1 img ,.content1-icon2 img ,.content1-icon3 img ,.content1-icon4 img{
+  width: 20%;
+}
+
+/*--- content2-content style ---*/
+.main-content2-content{
+ grid-area: co2co; 
+ display: grid; 
+ grid-template-areas: 
+ "cocol cocor"
+ ;
+}
+.main-content2-content-left{
+ grid-area: cocol;
+ margin-left: 5%;
+ margin-top: 5%;
+
+}
+.main-content2-content-left span{
+ color: #bdbdbd;
+}
+.main-content2-content-left label{
+ color:#ffa726;
+}
+.main-content2-content-right{
+  grid-area: cocor;
+  
+}
+.mccrim{
+  width: 300px; height: 350px; float: right;
+}
+.mccrd{
+  width: 200px;height: 100px;margin-top: 15%; float: right;
+}
+}
+
+  </style>
+</head>
+<body>
+ <div class="contenair">
+
+    <section class="sec">
+      <!----------- Navbar codes ------------->
+     <nav class="navbar navbar-inverse" id="na">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#" id="br"> Qussier  </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" >
+          <li ><a href="#Home"  id="ente"> Home </a></li>
+          <li  ><a href="#AbouteUS"  id="ente"> Aboute US </a></li>
+          <li  ><a href="#Services"  id="ente"> Services </a></li>
+          <li  > <a href="#Rooms"  id="ente"> Rooms </a></li>
+          <li > <a href="#Contact"  id="ente"> Contact </a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="naa"><a class="btnlinks"> <button class="nabtn2"> Book Now </button> </a></li>
+        </ul>
+      </div>
+    </div>
+     </nav>
+
+     <!----------- header codes ------------->
+     <div class="header">
+     <div class="header-content-left">
+       <h1>OPEN THE DOOR FOR A SPACIOUS LIVING -</h1>
+     </div>
+     <div class="header-content-right">
+       <a href="" class="header-links"> Book a hotel services > </a><hr>
+       <a href="" class="header-links"> Book a hotel services > </a><hr>
+       <a href="" class="header-links"> Book a hotel services > </a><hr>
+     </div>
+     <div class="headerim"><img src="lobbyarea.png" alt=""></div>
+     </div>
+    </section>
+
+   <!----------- main codes ------------->
+
+   <div class="main">
+      <!----------- content1 codes ------------->
+     <div class="main-content1">
+       <div class="content1-icon1"> <img src="welcom drink.png" alt=""></div>
+       <div class="content1-text1"><h5> Welcom Drink </h5></div>
+       <div class="content1-icon2"><img src="car.png" alt=""></div>
+       <div class="content1-text2"><h5> Car Mentall </h5></div>
+       <div class="content1-icon3"><img src="spa.png" alt=""></div>
+       <div class="content1-text3"><h5> Spa </h5></div>
+       <div class="content1-icon4"><img src="wifi.png" alt=""></div>
+       <div class="content1-text4"><h5> Free Wifi </h5></div>
+     </div>
+
+     <!----------- content2 codes ------------->
+     <div class="main-content2">
+       <div class="main-content2-lapol">
+        <h1> Why You Should <label class="lap2">Stay Here</label></h1>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quae excepturi beatae at voluptatibus unde eligendi doloribus dolorum sint reprehenderit.</span>
+       </div>
+
+       <div class="main-content2-content">
+         <div class="main-content2-content-left">
+          <div>
+            <h3><label > -> </label>  Provide the best choice of Room. </h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ut.</span>
+          </div>
+          <div>
+            <h3><label > -> </label> Low price with Best Quality. </h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ut.</span>
+          </div>
+          <div>
+            <h3><label > -> </label> Rwestaurant Service. </h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ut.</span>
+          </div>
+         </div>
+         <div class="main-content2-content-right">
+           <img src="room.jpg" alt="" class="mccrim">
+           <div class="mccrd"><img src="room2.png" alt="" width="250px"></div>
+         </div>
+       </div>
+     </div>
+
+     <!----------- content3 codes ------------->
+     <section>
+     <div class="main-content3">
+       <div class="main-content3-lapol">
+         <h4>Our Room </h4>
+         <h1> A world of <label class="lap3"> Chioce </label></h1>
+         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quae excepturi beatae at voluptatibus unde eligendi doloribus dolorum sint reprehenderit.</span>
+       </div>
+
+       <div class="main-content3-content">
+         <div class="main-content3-im1" >
+           <img src="room6.jpg" alt="" style="width: 200px;height: 150px;">
+           <h6> Room with View </h6>
+         </div>
+         <div class="main-content3-im2">
+           <img src="room2.png" alt="" style="width: 500px; height: 400px; ">
+           <h6> Luxury Room </h6>
+         </div>
+         <div class="main-content3-im3" >
+           <img src="room4.jpg" alt="" style="width: 200px;height: 150px; ">
+           <h6> Small Room </h6>
+         </div>
+         <div class="main-content3-im4" >
+           <img src="rom5.jpg" alt="" style="width: 200px;height: 150px; ">
+           <h6> Appartment </h6>
+         </div>
+         <div class="main-content3-im5" >
+           <img src="room.jpg" alt="" style="width: 200px;height: 150px;">
+           <h6> Meduim Room </h6>
+         </div>
+       </div>
+     </div>
+
+     <!----------- content4 codes ------------->
+      <div class="main-content4">
+        <div class="main-content4-content-left">
+          <div class="main-content4-content-left-content">
+           <h1>About Us</h1><hr>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora omnis! Nobis voluptatum dicta deleniti voluptas excepturi itaque libero amet?</p> <br>
+           <p>Lorem ipsum dolor sit amet.</p>
+           <a href="" class="mra"> <button class="mrb"> Learn More </button></a>
+         </div>
+         <div class="mcld">
+           <h3> CLASSIC ROMMS AND INTERIOR </h3>
+           <span>Lorem ipsum dolor sit amet.</span><br><br>
+           <img src="com.PNG" alt=""><br>
+           <span>Lorem ipsum dolor sit amet.</span>
+         </div>
+        </div>
+
+        <div class="main-content4-content-right">
+          <div class="mcrd">
+           <a href="" class="mcra">
+             <div class="md1 box"> 
+               <h5> <label for=""> >> </label> RESTORANT </h5>
+               <span>Lorem ipsum dolor sit amet.</span>
+             </div>
+           </a>
+           <a href="" class="mcra">
+            <div class="md2 box"> 
+              <h5><label for=""> >> </label> SPA & WELLNESS </h5>
+              <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+           </a>
+            <br>
+            <a href="" class="mcra">
+              <div class="md3 box"> 
+                <h5><label for=""> >> </label> THE BEST ROMMS </h5>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </a>
+            <a href="" class="mcra">
+              <div class="md4 box"> 
+                <h5><label for=""> >> </label> LOUNGE BAR </h5>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </a>         
+          </div>
+       </div>
+      </div>
+
+    </div>
+
+
+   <!----------- footer codes ------------->
+    <div class="footer">
+      <br><br>
+      <div  class="dfo">
+       <div class="dfo1">
+        <h4>QUICK LINK</h4>
+        <ul class="list">
+         <li><a href="" class="dfa">Home</a></li><br>
+         <li><a href="" class="dfa">Service</a></li><br>
+         <li><a href="" class="dfa">Aboute us</a></li><br>
+         <li><a href="" class="dfa">Contact</a></li>
+        </ul>
+       </div>
+       <div class="dfo2"> 
+         <h1>GET IN TOUCH</h1>
+         <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, odit.</span><br><br><br>
+         <input type="search" class="dfa">
+         <a href=""><button class="dfb">search</button></a>
+       </div>
+       <div class="dfo3">
+         <h4> USEFUL</h4>
+         <ul class="list">
+           <li><a href="" class="dfa">Pravicy Police</a></li><br>
+           <li><a href="" class="dfa">FAQ</a></li><br>
+           <li><a href="" class="dfa">Blog#</a></li>
+         </ul>
+       </div>
+      </div>
+      <br><br><br><hr>
+      <div class="dfo4">
+        <img src="twiiter.png" alt="" class="im1">
+        <img src="fac1.jpg" alt="" class="im2">
+        <img src="icon1.png" alt="" class="im3">
+      </div>
+      <h6> Develope by <br> Fatma Timerk </h6>
+     </div>
+
+
+  </div>
+</body>
+</html>
